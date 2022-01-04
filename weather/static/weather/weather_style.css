@@ -1,0 +1,55 @@
+*{
+    margin:0;
+    padding:0;
+    background-color: rgb(228, 213, 153);
+    color: rgb(48, 150, 153);
+}
+
+h1{
+    padding: 30px;
+    color: purple;
+    font-size: 50px;
+}
+body{
+    text-align:center;
+    padding-bottom: 20px;
+}
+.content{
+
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.base{
+    font-size: 20px;
+    text-align: center;
+    padding-left: 30px;
+    padding-right:30px;
+}
+.weather{
+    padding:20px;
+    border:solid 5px;
+    border-radius: 5px;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+
+a{
+    border: solid 2px;
+    border-radius:30px;
+    text-decoration: none;
+    font-size: 40px;
+    padding: 10px;
+    background-color: white;
+    transition-duration: 0.5s;
+}
+
+a:hover{
+    background-color: purple;
+}
+
+.add-city .add{
+    font-weight: bold;
+}
+

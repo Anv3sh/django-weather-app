@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'weather/weather_style.css' %}">
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="heading">
+    <h1>Weather App</h1>
+    </div>
+
+    <div class="content">
+
+    <div class="delete-city">
+        <a class="delete" type="button" href="{% url 'delete-city' %}">-</a>
+    </div>
+    
+
+    <div class="base">
+    {% if city %}
+    {% for city in city %}
+    <div class ="weather">
+    <div class="image">
+        <img src="http://openweathermap.org/img/w/{{ city.icon }}.png" alt="img">
+    </div>
+        <p>{{city.city}}</p>
+        <p>{{city.temperature}}°C</p>
+        <p>{{city.description}}</p>
+    </div>
+    {% endfor %}
+    {% endif %}
+    </div>
+
+    <div class= "add-city">
+        <a class="add" type="button" href="{% url 'add-city' %}">+</a>
+    </div>
+
+    </div>
+</body>
+</html>
