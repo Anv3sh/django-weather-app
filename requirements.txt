@@ -108,7 +108,6 @@ tzdata==2021.1
 Unidecode==1.3.2
 urllib3==1.26.5
 virtualenv==20.4.7
--e git+https://github.com/wagtail/wagtail.git@131cd076b77fa2e4c79f546d975ee4e52cb0ce32#egg=wagtail
 webencodings==0.5.1
 Willow==1.4
 wrapt==1.12.1
