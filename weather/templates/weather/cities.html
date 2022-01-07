@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="city-box">
-        <form action="{% url 'weather-app' %}" method="POST">
+        <form action="" method="POST">
             {% csrf_token %}
             <div class="name">
             <h1>City Name</h1>
@@ -18,8 +18,8 @@
             </div>
 
             <div class="submit">
-            <a href="{% url 'weather-app'%}">
-                <input class="input" type="submit" value="Ezz"/>
+            <a>
+                <input class="input" type="submit" value="Ok"/>
             </a>
             </div>
         </form>
