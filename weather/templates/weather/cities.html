@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="city-box">
-        <form action="" method="POST">
+        <form action="{% url 'weather-app' %}" method="POST">
             {% csrf_token %}
             <div class="name">
             <h1>City Name</h1>
